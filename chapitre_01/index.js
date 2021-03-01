@@ -1,11 +1,13 @@
 const express = require('express');
 const app = express();
 
-
+//exe-0
 app.get("/", (req, res) => {
   res.send("Authors API");
 })
 
+
+//exe-1
 app.get("/authors/:id", (req, res) => {
   switch (req.params.id) {
     case "1":
@@ -23,6 +25,27 @@ app.get("/authors/:id", (req, res) => {
 
   }
 })
+
+//exe-2
+
+app.get("/authors/:id/books", (req, res) => {
+  switch (req.params.id) {
+    case "1":
+      res.send("Beowulf")
+      break;
+    case "2":
+      res.send("Hamlet, Othello, Romeo and Juliet, MacBeth")
+      break;
+    case "3":
+      res.send("Oliver Twist, A Christmas Carol")
+      break;
+    case "4":
+      res.send("The Picture of Dorian Gray, The Importance of Being Earnest")
+      break;
+
+  }
+})
+
 
 
 
