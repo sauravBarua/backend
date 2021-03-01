@@ -7,7 +7,7 @@ app.get("/", (req, res) => {
 })
 
 
-//exe-1
+//exe-1 et exe-3
 app.get("/authors/:id", (req, res) => {
   switch (req.params.id) {
     case "1":
@@ -22,7 +22,8 @@ app.get("/authors/:id", (req, res) => {
     case "4":
       res.send("Oscar Wilde, UK")
       break;
-
+    default:
+      res.send(`Id ${req.params.id} does not exist`)
   }
 })
 
