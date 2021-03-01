@@ -48,6 +48,27 @@ app.get("/authors/:id/books", (req, res) => {
 })
 
 
+//exe-4
+
+const authors = [
+  {
+    name: "Lawrence Nowell",
+    nationality: "UK"
+  }
+]
+app.get("/json/authors/:id", (req, res) => {
+  res.send(authors);
+})
+
+
+const books = [
+  {
+    books: ["Beowulf"]
+  }
+]
+app.get("/json/authors/:id/books", (req, res) => {
+  res.send(books);
+})
 
 
 
