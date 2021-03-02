@@ -6,8 +6,8 @@ const app = express();
 app.engine("handlebars", expressHandlebars());
 app.set("view engine", "handlebars");
 
-app.get("/login", (req, res) => {
-    res.render("login");
+app.get("/", (req, res) => {
+    res.render("home");
 });
 
 app.get("/profil", (req, res) => {
@@ -16,7 +16,7 @@ app.get("/profil", (req, res) => {
 
 
 app.use(express.urlencoded({ extended: true }));
-app.post("/login", (req, res) => {
+app.post("/", (req, res) => {
     console.log(req.body);
     res.redirect('/profil')
 });
