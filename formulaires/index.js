@@ -5,7 +5,6 @@ const app = express();
 
 app.engine("handlebars", expressHandlebars());
 app.set("view engine", "handlebars");
-app.use(express.static("public"));
 
 app.get("/login", (req, res) => {
     res.render("login");
