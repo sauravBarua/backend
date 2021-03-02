@@ -11,6 +11,11 @@ app.get("/login", (req, res) => {
 });
 
 
+app.use(express.urlencoded({ extended: true }));
+app.post("/login", (req, res) => {
+    console.log(req.body);
+});
+
 app.listen(8000, () => {
     console.log("Server running.........");
 });
