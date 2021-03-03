@@ -1,0 +1,82 @@
+body {
+  font-family: Oswald, Helvetica, Arial, sans-serif;
+  font-weight: 200;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label {
+  font-family: Courgette, Georgia, serif;
+}
+
+.background-header-image {
+  background: url(../img/header.jpg) center center;
+
+}
+.navbar {
+  background: rgba(0, 0, 0, 0.8);
+  border-bottom: 2px solid white;
+}
+
+.navbar-brand {
+  font-family: Courgette, Georgia, serif;
+  font-size: 32px;
+}
+
+header {
+  background: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  color: white;
+}
+
+header img {
+  width: 150px;
+}
+
+header .col-12 {
+  padding: 100px;
+}
+
+footer {
+  background-color: black;
+  padding: 32px;
+}
+
+footer a {
+  color: white;
+  text-decoration: underline;
+}
+
+footer a:hover {
+  color: white;
+}
+
+footer ul {
+  list-style: none;
+  padding: 4px;
+}
+
+#subscribe {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+} 
+
+#subscribe:hover {
+  background-color: gray;
+} 
+
+.social-icons li {
+  margin: 0px 4px;
+}
+
+.social-icons i {
+  padding: 8px;
+  background-color: white;
+  color: black;
+  font-size: 22px;
+}

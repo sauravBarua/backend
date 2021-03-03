@@ -1,0 +1,61 @@
+#previous-article {
+    color: black
+}
+#previous-article:hover {
+    color: black
+}
+
+#articles .row {
+    margin-bottom: 8px;
+}
+
+#side-bar button {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+#side-bar button:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+
+#desktop-social-icons li{
+    margin: 0px 4px;
+}
+
+#desktop-social-icons a{
+    color: black;
+}
+
+#desktop-social-icons .fa-facebook:hover{
+    color: blue;
+}
+
+#desktop-social-icons .fa-instagram:hover{
+    color: yellow;
+}
+
+#desktop-social-icons .fa-twitter:hover{
+    color: paleturquoise;
+}
+
+#desktop-social-icons .fa-youtube:hover{
+    color: red;
+}
+
+#content {
+    padding: 32px 0px;
+}
+
+#content-title {
+    padding-bottom: 16px;
+}
+
+@media (min-width: 992px) {
+    #content {
+        max-width: 960px;
+        margin: auto;
+    }
+}
