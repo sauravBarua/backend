@@ -1,10 +1,13 @@
 const express = require('express');
-const bodyParser = require("body-parser")
+const bodyParser = require("body-parser");
+const cors = require("cors");
 const app = express();
+
 
 const students = [];
 
 app.use(bodyParser.json());
+app.use(cors());
 
 
 app.get("/students", (req, res) => {
