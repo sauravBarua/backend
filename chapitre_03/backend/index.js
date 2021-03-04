@@ -1,15 +1,10 @@
 const express = require('express');
+const bodyParser = require("body-parser")
 const app = express();
 
-const students = [
-    {
-        name: "Neo",
+const students = [];
 
-    },
-    {
-        name: "Leo",
-    }
-];
+app.use(bodyParser.json());
 
 
 app.get("/students", (req, res) => {
@@ -18,7 +13,7 @@ app.get("/students", (req, res) => {
 
 app.post("/students", (req, res) => {
     students.push(req.body);
-    res.send("Data add");
+    res.json(students);
 });
 
 
