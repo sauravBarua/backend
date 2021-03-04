@@ -14,7 +14,7 @@ app.get("/students", (req, res) => {
     res.send("");
 });
 
-app.post("/students/add",(req,res)=>{
+app.post("/students",(req,res)=>{
     students.push(req.body);
     res.send("Data add");
 });
