@@ -12,7 +12,7 @@ mongoose.connect(
 );
 
 const citySchema = new mongoose.Schema({
-    id: Number,
+    _id: Number,
     department: Number,
     city: String,
     population: Number
