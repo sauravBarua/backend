@@ -44,7 +44,7 @@ app.post('/login',
         const user = new userModel({
             username: req.body.username,
             email: req.body.email,
-            password: req.body.password,
+            password: bcrypt.hashSync(req.body.password),
         })
         try {
             const saveUser = await user.save()
