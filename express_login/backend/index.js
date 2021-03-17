@@ -5,7 +5,8 @@ const mongoose = require('mongoose');
 const userModel = require("./models/user");
 const { body, validationResult } = require('express-validator');
 const passwordValidator = require('password-validator');
-
+const bcrypt = require('bcryptjs');
+const jwt = require('jsonwebtoken');
 
 
 app.use(express.json());
