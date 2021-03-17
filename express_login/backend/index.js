@@ -4,6 +4,7 @@ const port = 8000;
 const mongoose = require('mongoose');
 const userModel = require("./models/user");
 const { body, validationResult } = require('express-validator');
+const passwordValidator = require('password-validator');
 
 
 
