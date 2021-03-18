@@ -7,9 +7,21 @@ function Register () {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   
-  function Signup (){
-    const items = {username,email,password}
-    console.log(items)
+  async function Signup (){
+
+    let data = {username,email,password}
+    console.warn(data)
+    let result = await fetch("http://localhost:8000/signup",{
+      method: 'POST', 
+      mode: 'cors',
+      body: JSON.stringify(data),
+      headers: {
+        'Content-Type': 'application/json'
+      },
+   
+    })
+    result = await result.json()
+    console.warn("result",result)
 
   }
 
