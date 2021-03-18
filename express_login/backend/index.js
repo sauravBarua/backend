@@ -7,9 +7,14 @@ const { body, validationResult } = require('express-validator');
 const passwordValidator = require('password-validator');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
+const config = require("./config");
+const cors = require('cors');
+
 
 
 app.use(express.json());
+app.use(cors())
+
 
 
 mongoose.connect('mongodb://localhost:27017/login',
@@ -22,7 +27,7 @@ app.get('/', (req, res) => {
     res.json('Hello World')
 });
 
-app.post('/login',
+app.post('/signup',
     body('email').isEmail(),
     body('password').custom((value) => {
         var schema = new passwordValidator();
