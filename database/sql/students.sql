@@ -1,10 +1,13 @@
+
+CREATE TABLE students (id INT, name VARCHAR (30), city VARCHAR (30));
+
 insert into students(id, Name,City) 
 values(1, "Véronique","Paris"), 
-('2', 'Steeven','Lyon'), 
-('3', 'Marc','Marseille'), 
-('4', 'Nour','Lyon'), 
-('5', 'Romain','Paris'), 
-('6', 'Sophie','Paris')
+(2, 'Steeven','Lyon'), 
+(3, 'Marc','Marseille'), 
+(4, 'Nour','Lyon'), 
+(5, 'Romain','Paris'), 
+(6, 'Sophie','Paris')
 
 CREATE TABLE languages (ID int,Name varchar(30))
 
