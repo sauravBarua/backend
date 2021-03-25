@@ -10,4 +10,8 @@ CREATE TABLE Candidates (
     INSERT INTO Candidates (ID,first_name,last_name,birthday,salary) 
     VALUES (1, "Dev", "ED",02-11-2002, 5000)
 
-
+CREATE TABLE Languages (
+    ID int NOT NULL PRIMARY KEY,
+     name varchar(30), 
+     candidate_id INT, CONSTRAINT FOREIGN KEY 
+     (candidate_id) REFERENCES Candidates(ID))
