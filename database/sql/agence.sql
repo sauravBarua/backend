@@ -15,3 +15,9 @@ CREATE TABLE Languages (
      name varchar(30), 
      candidate_id INT, CONSTRAINT FOREIGN KEY 
      (candidate_id) REFERENCES Candidates(ID))
+
+CREATE TABLE Programming (
+     ID int NOT NULL PRIMARY KEY,
+     name varchar(30), 
+     candidate_id INT, CONSTRAINT FOREIGN KEY 
+     (candidate_id) REFERENCES Candidates(ID))
